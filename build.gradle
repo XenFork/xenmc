@@ -1,5 +1,5 @@
 plugins {
-
+    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
 }
 
 allprojects {
@@ -8,4 +8,17 @@ allprojects {
 
 subprojects {
     apply plugin: "java-library"
+    apply plugin: 'com.github.johnrengelman.shadow'
+    apply plugin: 'maven-publish'
+
+    publishing {
+        publications {
+            shadow(MavenPublication) { publication ->
+                project.shadow.component(publication)
+            }
+        }
+        repositories {
+            mavenLocal()
+        }
+    }
 }
