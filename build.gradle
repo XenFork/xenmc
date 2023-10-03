@@ -1,0 +1,11 @@
+plugins {
+
+}
+
+allprojects {
+
+}
+
+subprojects {
+    apply plugin: "java-library"
+}
