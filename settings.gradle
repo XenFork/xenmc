@@ -1,5 +1,7 @@
 pluginManagement {
     repositories {
+        mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
     }
 }
@@ -8,7 +10,7 @@ pluginManagement {
 for (final def f in file("./").listFiles()) {
     if (f.isDirectory()) {
         def name = f.name
-        if (!(name.equals(".gradle") || name.equals(".idea") || name.equals("gradle") || name.equals("build") || name.equals("run") || name.equals(".git"))) {
+        if (!(name.equals("config") || name.equals("download") || name.equals(".gradle") || name.equals(".idea") || name.equals("gradle") || name.equals("build") || name.equals("run") || name.equals(".git"))) {
             include name
             println name
         }

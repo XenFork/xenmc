@@ -7,7 +7,9 @@ version = "0.0.1-a"
 
 dependencies {
     implementation gradleApi()
-    implementation 'com.acgist:snail:1.17.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+//    implementation 'com.acgist:snail:1.17.1'
+    implementation 'cn.hutool:hutool-all:5.8.22'
 }
 
 shadowJar {
