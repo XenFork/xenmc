@@ -1,0 +1,25 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+}
+
+version = "0.0.1-a"
+
+dependencies {
+    implementation gradleApi()
+    implementation 'com.acgist:snail:1.17.1'
+}
+
+shadowJar {
+    archiveClassifier.set("plugin")
+}
+
+gradlePlugin {
+    plugins {
+        xenmcGradle {
+            id = 'xenmc-gradle'
+            implementationClass = 'io.github.xenfork.gradle.XenMcGradle'
+        }
+    }
+}
+

@@ -10,6 +10,11 @@ subprojects {
     apply plugin: "java-library"
     apply plugin: 'com.github.johnrengelman.shadow'
     apply plugin: 'maven-publish'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+    }
 
     publishing {
         publications {
@@ -21,4 +26,5 @@ subprojects {
             mavenLocal()
         }
     }
+
 }
