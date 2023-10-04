@@ -12,7 +12,7 @@ for (final def f in file("./").listFiles()) {
         def name = f.name
         if (!(name.equals("config") || name.equals("download") || name.equals(".gradle") || name.equals(".idea") || name.equals("gradle") || name.equals("build") || name.equals("run") || name.equals(".git"))) {
             include name
-            println name
+//            println name
         }
     }
 
