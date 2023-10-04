@@ -19,6 +19,11 @@ public class GsonLenient {
         bw.flush();
         bw.write(json);
         bw.close();
+    }
 
+    public static <T> T loadJson(File file, Class<T> tClass) throws IOException {
+        try(BufferedReader json1 = new BufferedReader(new FileReader(file))) {
+            return gson.fromJson(json1, tClass);
+        }
     }
 }

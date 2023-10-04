@@ -37,6 +37,7 @@ public class I18n {
         } catch (IOException ignored) {
             System.err.println("don,t find setting language");
         }
+        System.out.println(this.get("select_language_is"));
     }
 
     public String get(String key) {

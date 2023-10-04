@@ -1,6 +1,5 @@
 {
   "loader_mode_on": "loader mode on",
-  "select_language_is": "select language is ",
-  "set_minecraft_error": "error: please set minecraft version",
-  "en_us": "en_us"
+  "select_language_is": "select language is en_us",
+  "set_minecraft_error": "error: please set minecraft version"
 }

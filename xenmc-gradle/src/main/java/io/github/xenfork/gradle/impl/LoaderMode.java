@@ -9,4 +9,8 @@ public class LoaderMode {
     public static void isLoader(Project project, I18n i18n, XenMC xenMC, Minecraft minecraft) {
 
     }
+
+    public static void isModding(Project project, I18n i18n, XenMC xenMC, Minecraft minecraft) {
+
+    }
 }
