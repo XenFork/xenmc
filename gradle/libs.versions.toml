@@ -1,0 +1,21 @@
+[versions]
+xenmc_gradle="1.0.0-SNAPSHOT"
+hutool_all="5.8.25"
+gson="2.10.1"
+asm="9.6"
+proguard="7.4.1"
+[plugins]
+
+xenmc-gradle = { id="io.github.xenfork.xenmc.plugin", version.ref="xenmc_gradle" }
+[libraries]
+#proguard-gradle={ group="com.guardsquare",name="proguard-gradle",version.ref="proguard" }
+asm-core={ group="org.ow2.asm",name="asm",version.ref="asm" }
+asm-commons={ group="org.ow2.asm",name="asm-commons",version.ref="asm" }
+asm-util={ group="org.ow2.asm",name="asm-util",version.ref="asm" }
+asm-tree={ group="org.ow2.asm",name="asm-tree",version.ref="asm" }
+asm-analysis={ group="org.ow2.asm",name="asm-analysis",version.ref="asm" }
+google-gson={ group="com.google.code.gson",name="gson",version.ref="gson" }
+hutool-all={ group="cn.hutool", name ="hutool-all", version.ref="hutool_all" }
+[bundles]
+asm-all=["asm-core","asm-commons", "asm-tree", "asm-util", "asm-analysis"]
+xenmc-gradle=["hutool-all"]
